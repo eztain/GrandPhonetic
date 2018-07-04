@@ -1,14 +1,6 @@
 # Name:  Jake Colson
 # Student Number: 10472749
 
-# This file is provided to you as a starting point for the "logviewer.py" program of Assignment 2
-# of CSP1150/CSP5110 in Semester 1, 2018.  It aims to give you just enough code to help ensure
-# that your program is well structured.  Please use this file as the basis for your assignment work.
-# You are not required to reference it.
-
-# The "pass" command tells Python to do nothing.  It is simply a placeholder to ensure that the starter file runs smoothly.
-# They are not needed in your completed program.  Replace them with your own code as you complete the assignment.
-
 
 # Import the necessary modules.
 from tkinter import *
