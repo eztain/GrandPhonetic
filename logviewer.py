@@ -1,8 +1,7 @@
-# Name:  Jake Colson
-# Student Number: 10472749
+# eztain.net
 
 
-# Import the necessary modules.
+
 from tkinter import *
 import tkinter.messagebox
 import json
@@ -19,11 +18,7 @@ class ProgramGUI():
 
 
         
-        
-        # This is the constructor of the class.
-        # It is responsible for loading the log file data and creating the user interface.
-        # See the "Constructor of the GUI Class of 'logviewer.py'" section of the assignment brief.
-        
+     
         self.main = Tk()
         self.main.title('LogViewer')
         self.main.geometry("400x300")

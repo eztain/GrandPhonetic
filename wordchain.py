@@ -1,16 +1,12 @@
-# Name:  Jake Colson
-# Student Number:  10472749
+#  Written by: eztain 
+# eztain.net
 
-# Import the necessary modules.
 import random
 import urllib.request
 import json
 import string
 import operator 
 
-# This function repeatedly prompts for input until the user enters
-# something at least one character long and entirely alphabetic.
-# See the "The 'inputWord' Function" section of the assignment brief.
 def inputWord(promt):
     while True:
         value = input(promt)
@@ -110,11 +106,11 @@ while state == True:
 
         #gets response on wordnik
         if playerAnswer not in playerAnswerList and playerAnswer[0].upper() == letter:
-            response = urllib.request.urlopen('http://api.wordnik.com:80/v4/word.json/' + word + '/definitions?limit=5&partOfSpeech=' + wordType + '&api_key=aaaa946871985c2eb2004061aba0695e00190753d6560ebea') #taken from the discussion board
+            response = urllib.request.urlopen('http://api.wordnik.com:80/v4/word.json/' + word + '/definitions?limit=5&partOfSpeech=' + wordType + '&api_key=7bebe06771a20055be0070b98090b754cc5c04049963a1f48') #taken from the discussion board
             wordData = json.load(response)
             for i in range(0, len(wordData)):
                 firstDef = wordData[i]
-                print("\n" + "○ " + firstDef['text'] + "\n")
+                print("\n" + "? " + firstDef['text'] + "\n")
 
             #checks if search resault came back blank
             if wordData == []:
